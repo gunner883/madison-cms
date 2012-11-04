@@ -1,0 +1,14 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/masterpages/Madison-Master.master" AutoEventWireup="true" %>
+
+<asp:Content ContentPlaceHolderID="contentPlaceholderMain" runat="server"> 
+	
+	<div class="gallery">
+	<umbraco:Macro Alias="ScMadison-RenderGallery" runat="server" />	
+	</div>
+    <div class="clear"></div>
+	<div class="features">
+	<umbraco:Macro Alias="ScMadison-RenderHomepageFeatures" runat="server" />
+	</div>	
+    <div class="clear"></div>
+	
+</asp:Content>

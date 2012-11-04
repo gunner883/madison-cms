@@ -1,0 +1,17 @@
+﻿@inherits umbraco.MacroEngines.DynamicNodeContext
+ 
+	@foreach (var item in @Model.Children) 
+    {
+	    if(item.NodeTypeAlias=="collection" && item.Name=="Gallery")
+        {
+			foreach(var img in item.Children)
+			{
+				<div class="gallery-item">
+					<img src="@Model.MediaById(@img.image).umbracoFile" alt="@img.name" />   
+                    <div class="gallery-overlay">    
+					    <div class="gallery-overlay-caption">@img.imageCaption</div>
+                    </div>
+				</div>   
+			}
+        }		
+	}

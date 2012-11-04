@@ -1,0 +1,23 @@
+﻿@inherits umbraco.MacroEngines.DynamicNodeContext
+	
+	@{Int32 colnum = 1;}
+	@{string className;}
+	
+@foreach (var item in @Model.Children) 
+{
+
+	if(item.NodeTypeAlias=="collection" && item.Name=="Articles")
+	{
+		foreach(var feature in item.Children)
+		{
+            className = "feature-" + colnum.ToString();
+			<div class="@className">
+			<h3>@feature.Title</h3>
+			@feature.bodyText
+			</div>
+            colnum++;
+    		
+		}
+
+	}
+}

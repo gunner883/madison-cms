@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/umbraco/masterpages/default.master" AutoEventWireup="true" %>
+<asp:Content ID="Content1" ContentPlaceHolderId="ContentPlaceHolderDefault" runat="server">	
+<!doctype html>
+	<html>
+		<head>
+			<title><umbraco:Item field="sitename" runat="server" /><umbraco:Item field="pageName" runat="server" /></title>
+			<meta charset="utf-8" />			
+			
+			<link href="../css/madison.css" rel="stylesheet" type="text/css" />
+			
+		</head>
+		<body>
+			<div class="container">
+				<div class="header">
+					<div class="header-band">
+						<div class="nav-container">
+							<ul class="nav">
+								<li>home</li>
+								<li>About</li>
+								<li>Services</li>
+								<li>Gallery</li>
+								<li>Contact</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="body">
+					<asp:ContentPlaceHolder Id="contentPlaceholderMain" runat="server">
+					
+					</asp:ContentPlaceHolder>
+				</div>
+				<div class="footer">
+					<div class="logo"></div>
+					<div class="findus"></div>
+					<div class="signup"></div>
+					<div class="connect"></div>
+				</div>
+			</div>
+		</body>
+	</html>
+</asp:Content>

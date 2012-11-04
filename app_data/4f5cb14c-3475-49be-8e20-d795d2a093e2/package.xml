@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<umbPackage>
+  <files>
+    <file>
+      <guid>Sitereactor.StandardValues.dll</guid>
+      <orgPath>/bin</orgPath>
+      <orgName>Sitereactor.StandardValues.dll</orgName>
+    </file>
+    <file>
+      <guid>StandardValue.config</guid>
+      <orgPath>/umbraco/plugins/Sitereactor/StandardValues/Config</orgPath>
+      <orgName>StandardValue.config</orgName>
+    </file>
+    <file>
+      <guid>EditStandardValue.aspx</guid>
+      <orgPath>/umbraco/plugins/Sitereactor/StandardValues</orgPath>
+      <orgName>EditStandardValue.aspx</orgName>
+    </file>
+    <file>
+      <guid>EditStandardValueKeys.aspx</guid>
+      <orgPath>/umbraco/plugins/Sitereactor/StandardValues</orgPath>
+      <orgName>EditStandardValueKeys.aspx</orgName>
+    </file>
+    <file>
+      <guid>install.ascx</guid>
+      <orgPath>/umbraco/plugins/Sitereactor/StandardValues</orgPath>
+      <orgName>install.ascx</orgName>
+    </file>
+    <file>
+      <guid>NewStandardValueKeyTreeAction.js</guid>
+      <orgPath>/umbraco/plugins/Sitereactor/StandardValues</orgPath>
+      <orgName>NewStandardValueKeyTreeAction.js</orgName>
+    </file>
+    <file>
+      <guid>6080640a-816c-4580-b68d-456f6f45a922_install.ascx</guid>
+      <orgPath>/umbraco/plugins/Sitereactor/StandardValues</orgPath>
+      <orgName>install.ascx</orgName>
+    </file>
+  </files>
+  <info>
+    <package>
+      <name>Standard Values</name>
+      <version>1.4</version>
+      <license url="http://www.opensource.org/licenses/mit-license.php">MIT license</license>
+      <url>http://our.umbraco.org/projects/developer-tools/standard-values-in-umbraco</url>
+      <requirements>
+        <major>3</major>
+        <minor>0</minor>
+        <patch>0</patch>
+      </requirements>
+    </package>
+    <author>
+      <name>Morten Christensen</name>
+      <website>http://blog.sitereactor.dk</website>
+    </author>
+    <readme><![CDATA[This package adds a Standard Values folder in the Settings section of Umbraco, which allows you to add standard values to all your document types.
+You can create standard values for each of your document types or just a selected few, you decide. All values are saved in the original DataTypes, so there should be no limitation as to creating standard values.
+Values are inserted when you create a new document based on a document type, for which you added standard values to.]]></readme>
+  </info>
+  <DocumentTypes />
+  <Templates />
+  <Stylesheets />
+  <Macros />
+  <DictionaryItems />
+  <Languages />
+  <DataTypes />
+  <control>/umbraco/plugins/Sitereactor/StandardValues/install.ascx</control>
+  <Actions>
+    <Action runat="install" alias="StandardValues_ExecuteNonQuery">
+      <Sqlserver><![CDATA[      	
+     		CREATE TABLE [StandardValues](
+     			  [docTypeId] [int] NOT NULL CONSTRAINT [PK_StandardValues] PRIMARY KEY ,
+     			  [nodeId] [int] NOT NULL
+     				);
+		  ]]></Sqlserver>
+      <VistaDB><![CDATA[
+		  CREATE TABLE [StandardValues]
+		  (
+		  [docTypeId] INT NOT NULL PRIMARY KEY,
+		  [nodeId] INT NOT NULL
+		  );
+		  ]]></VistaDB>
+      <MySQL><![CDATA[
+		  CREATE TABLE StandardValues (
+		  docTypeId INTEGER UNSIGNED DEFAULT NULL,
+		  nodeId INTEGER UNSIGNED NOT NULL,
+		  PRIMARY KEY (docTypeId)
+		  );
+		  ]]></MySQL>
+    </Action>
+    <Action runat="install" undo="true" alias="AddCustomLanguageFileKey" language="en" position="end" area="actions" key="createnewkey" value="Create New Key" />
+    <Action runat="install" undo="true" alias="StandardValues_Uninstaller" />
+  </Actions>
+</umbPackage>
