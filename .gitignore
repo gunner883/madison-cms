@@ -25,9 +25,11 @@
 *.unsuccessfulbuild
 ipch/
 obj/
+app_data/*
 [Bb]in
 [Dd]ebug*/
 [Rr]elease*/
+
 Ankh.NoLoad
 
 #MonoDevelop
