@@ -44,7 +44,6 @@
     <add key="umbracoProfileUrl" value="profiler" />
     <add key="umbracoUseSSL" value="false" />
     <add key="umbracoUseMediumTrust" value="false" />
-    <add key="aspnet:MaxHttpCollectionKeys" value="2001" />
     <!-- 
       Set this to true to enable storing the xml cache locally to the IIS server even if the app files are stored centrally on a SAN/NAS 
       Alex Norcliffe 2010 02 for 4.1
@@ -80,7 +79,6 @@
         <add tagPrefix="asp" namespace="System.Web.UI" assembly="System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" />
         <add tagPrefix="umbraco" namespace="umbraco.presentation.templateControls" assembly="umbraco" />
         <add tagPrefix="asp" namespace="System.Web.UI.WebControls" assembly="System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" />
-        <add tagPrefix="umbracoUi" namespace="umbraco.uicontrols" assembly="controls" />
       </controls>
     </pages>
     <httpModules>
@@ -108,8 +106,6 @@
       <add verb="*" path="DependencyHandler.axd" type="ClientDependency.Core.CompositeFiles.CompositeDependencyHandler, ClientDependency.Core " />
       <!-- SPELL CHECKER -->
       <add verb="GET,HEAD,POST" path="GoogleSpellChecker.ashx" type="umbraco.presentation.umbraco_client.tinymce3.plugins.spellchecker.GoogleSpellChecker,umbraco" />
-      <add verb="*" path="PaymentRequest.axd" type="UCommerce.Transactions.Payments.PaymentRequestForm, UCommerce" />
-      <add verb="*" path="PaymentProcessor.axd" type="UCommerce.Transactions.Payments.PaymentProcessor, UCommerce" />
     </httpHandlers>
     <compilation defaultLanguage="c#" batch="false" targetFramework="4.0">
       <assemblies>

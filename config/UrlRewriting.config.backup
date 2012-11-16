@@ -29,9 +29,5 @@
 				
 				Any bugs or problems with the rewriter, contact Anders/Duckie
 			-->
-    <add name="DefaultCategoryProductRewrite" virtualUrl="(.*)/c-([0-9]+)/c-([0-9]+)/p-([0-9]+)" rewriteUrlParameter="ExcludeFromClientQueryString" destinationUrl="~/shop/product.aspx?catalog=$2&amp;category=$3&amp;product=$4" ignoreCase="true" xmlns="" />
-    <add name="DefaultProductRewrite" virtualUrl="(.*)/c-([0-9]+)/p-([0-9]+)" rewriteUrlParameter="ExcludeFromClientQueryString" destinationUrl="~/shop/product.aspx?catalog=$2&amp;product=$3" ignoreCase="true" xmlns="" />
-    <add name="DefaultCategoryRewrite" virtualUrl="(.*)/c-([0-9]+)/c-([0-9]+)" rewriteUrlParameter="ExcludeFromClientQueryString" destinationUrl="~/shop/catalog.aspx?catalog=$2&amp;category=$3" ignoreCase="true" xmlns="" />
-    <add name="DefaultCatalogRewrite" virtualUrl="(.*)/c-([0-9]+)" rewriteUrlParameter="ExcludeFromClientQueryString" destinationUrl="~/shop/catalog.aspx?catalog=$2" ignoreCase="true" xmlns="" />
   </rewrites>
 </urlrewritingnet>

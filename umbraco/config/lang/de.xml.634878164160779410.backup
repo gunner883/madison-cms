@@ -177,7 +177,6 @@
     <key alias="concierge">Concierge</key>
     <key alias="translation">Übersetzung</key>
     <key alias="installer">Konfigurationsassistent</key>
-    <key alias="uCommerce">uCommerce</key>
   </area>
   <area alias="buttons">
     <key alias="save">Speichern</key>

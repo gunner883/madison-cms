@@ -1,0 +1,17 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/masterpages/Madison-Master.master" AutoEventWireup="true" %>
+
+<asp:content ID="Content1" ContentPlaceHolderId="contentPlaceholderMain" runat="server">
+	
+    <div class="content-area">
+        <div class="body-text shadow-box">
+    
+            <div class="image-sidebar-left"><umbraco:Macro ID="Macro1" Alias="ScGetMediaImage" runat="server" /></div>
+        	    
+	        <umbraco:Item ID="Item2" field="bodyText" runat="server" />	
+        
+            <h1><umbraco:Item ID="Item1" field="title" runat="server" /></h1>
+
+	    </div>
+    </div>
+
+</asp:content>

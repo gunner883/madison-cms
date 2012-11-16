@@ -178,7 +178,6 @@
     <key alias="concierge">Concierge</key>
     <key alias="translation">Vertaling</key>
     <key alias="installer">Umbraco Configuratie Wizard</key>
-    <key alias="uCommerce">uCommerce</key>
   </area>
   <area alias="buttons">
     <key alias="save">Opslaan</key>

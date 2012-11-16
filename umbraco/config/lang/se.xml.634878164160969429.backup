@@ -165,7 +165,6 @@
     <key alias="statistics"><![CDATA[Statistik]]></key>
     <key alias="translation"><![CDATA[Översättning]]></key>
     <key alias="users"><![CDATA[Användare]]></key>
-    <key alias="uCommerce">uCommerce</key>
   </area>
   <area alias="buttons">
     <key alias="justifyCenter"><![CDATA[Centrera]]></key>

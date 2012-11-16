@@ -1,0 +1,9 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/masterpages/Madison-Master.master" AutoEventWireup="true" %>
+
+<asp:content ID="Content1" ContentPlaceHolderId="contentPlaceholderMain" runat="server">
+	
+        <div class="gallery">
+        <img src="../images/madison/design1.jpg" />
+        </div>
+
+</asp:content>

@@ -638,7 +638,6 @@ To manage your website, simply open the umbraco back office and start adding con
     <key alias="statistics">Statistics</key>
     <key alias="translation">Translation</key>
     <key alias="users">Users</key>
-    <key alias="uCommerce">uCommerce</key>
   </area>
   <area alias="settings">
     <key alias="defaulttemplate">Default template</key>
