@@ -1,0 +1,174 @@
+﻿#content
+{
+ width: 100%;
+ margin-left:auto;
+ margin-right:auto;
+ overflow:hidden;
+ position: fixed;
+ top: 28%;
+ left:100%;
+ float:left;
+ padding: 15px;
+ text-align:center;
+ box-shadow: 5px 5px 5px #888;
+ border-radius: 10px;
+ background: none repeat scroll 0 0 rgba(255, 255, 255, 0.55);
+}
+
+
+/* about page */
+#content div.about
+{    
+    margin-top:5px;
+    padding:0px;
+	text-align:left;
+	overflow:auto;
+	font-family: AftaserifRegular,sans-serif;
+	overflow:hidden;
+	display:block;
+}
+
+#content div.about p
+{
+    margin:0px;
+    margin-left:5px;
+    font-size:14px;
+    margin-bottom:10px;
+}
+
+#content div.about div
+{
+    float: left;
+    width: 400px;
+}
+#content div.about img
+{
+    float:left;
+    border:5px solid white;
+    border-radius:10px;
+    margin-right:5px;
+    width: 465px;
+}
+
+#content div.about span { float: left; font-size: 75px; line-height: 60px; padding-top: 4px; padding-right: 8px; padding-left: 3px; color:orange; }
+                       
+
+
+
+/* projects page */
+#content div.project
+{    
+    height:375px;
+	font-family: AftaserifRegular,sans-serif;
+	font-size:15px;
+	float:left;
+	display:inline-block;
+	margin-right:10px;
+}
+
+#content div.project h3
+{
+    margin:2.5px;
+}
+
+#content div.project h3 span
+{
+    color: Orange;
+}
+
+#content div.project img
+{
+    border:5px solid white;
+    border-radius:10px;
+    width:285px;
+    height:180px;
+}
+
+#content div.project p
+{
+    padding:5px;
+    display:block;
+    position:relative;
+    text-align:left;
+    width:285px;
+    overflow:hidden;
+    font-size:14px;
+}
+
+/* contact */
+
+#content div.contact iframe
+{
+    float:left;
+    border:5px solid white;
+    border-radius:10px;
+    height:308px;
+    width:504px;
+    margin-right:5px;
+}
+
+#content div.contact div
+{
+    font-family: AftaserifRegular,sans-serif;
+    font-size: 15px;
+    overflow: auto;
+    padding: 5px;
+    text-align: left;
+    width: 365px;
+}
+
+
+#content .contact div dt {
+    color: #2F2F2F;
+    font-weight: bold;
+    margin-bottom: 21px;
+    width: 150px;
+}
+
+#content .contact div dd {
+    line-height: 21px;
+    margin-left: 0;
+}
+
+#content .contact div span {
+    width: 79px;    
+}
+
+/* development */
+#content div.development
+{    
+    display:block;
+	font-family: AftaserifRegular,sans-serif;
+	font-size:15px;
+	margin-right:10px;
+}
+
+#content div.development img
+{
+    border:5px solid white;
+    border-radius:10px;
+    float:left;
+    margin-right:15px;
+    height:300px;
+    width:400px;
+}
+
+#content div.development div
+{
+    float:left;
+    font-size: 15px;
+    overflow: hidden;
+    padding: 5px;
+    text-align: left;
+    width: 465px;
+}
+#content div.development div h3
+{
+    margin:2.5px;
+}
+
+#content div.development div h3 span
+{
+    color: Orange;
+}
+

@@ -2,11 +2,12 @@
 
 <asp:content ContentPlaceHolderId="main" runat="server">
 <div id="content">
-    <div class="about">	
+    <div class="development">
         <umbraco:Macro Alias="ScGetMediaImage" runat="server" />
         <div>
-			<umbraco:Item field="bodyText" runat="server" />
-        </div>
+            <h3><umbraco:Item field="title" runat="server" /></h3>
+            <umbraco:Item field="bodyText" runat="server" />
+		</div>
     </div>
 </div>	
 </asp:content>

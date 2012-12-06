@@ -1,0 +1,20 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/masterpages/madison.master" AutoEventWireup="true" %>
+
+<asp:content ContentPlaceHolderId="main" runat="server">
+<div id="content">
+    <div class="contact">	
+        <iframe width="524" height="338" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?oe=utf-8&amp;client=firefox-a&amp;channel=fflb&amp;q=282+hanover+street+boston+ma&amp;ie=UTF8&amp;hq=&amp;hnear=280-282+Hanover+St,+Boston,+Massachusetts+02113&amp;gl=us&amp;t=m&amp;z=14&amp;ll=42.363963,-71.05464&amp;output=embed"></iframe>
+        <div>
+            <p>Madison Aria is located in the heart of Boston's North End. Reach us by boat, plan or train. Stop by for a chat with some world-class designers or hang out and enjoy a world-class cappucino.</p>
+            <dl class="dl1">
+                <dt>282 Hanover St Boston MA 02114</dt>   
+                <dd><span>Mobile:</span>   +1 617 817 0554</dd>                                  
+                <dd><span>Telephone:</span>   +1 800 515 2022</dd> 
+                <dd><span>FAX:</span>   +1 800 515 2021</dd>                                
+                <dd>E-mail: <a href="info@madison-aria.com">info@madison-aria.com</a></dd>
+            </dl>
+        </div>
+    </div>
+</div>
+	
+</asp:content>

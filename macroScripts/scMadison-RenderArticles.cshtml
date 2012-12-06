@@ -1,0 +1,16 @@
+﻿@inherits umbraco.MacroEngines.DynamicNodeContext
+
+@foreach (var item in @Model.Children) 
+{
+
+	if(item.NodeTypeAlias=="article")
+	{
+		<div class="project">
+			<img src="@Model.MediaById(@item.image).umbracoFile" alt="@item.name" />  
+			<h3>@Html.Raw(@item.title)</h3>
+			@item.bodyText
+		</div>
+
+	}
+}
+   

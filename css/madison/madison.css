@@ -1,0 +1,97 @@
+﻿@import url("font-face.css") screen, print;
+
+body 
+{
+    background-image:url("/images/madison/shape-vortex-16248-1920x1200-no-logo.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    font-family: 'Open Sans',sans-serif;
+    overflow: hidden;
+}
+
+#header
+{
+    margin-top:20px;
+}
+.nav ul
+{
+    margin-right:15px;
+}
+.nav li
+{
+    float:left;
+    margin-right:15px;
+}
+
+.nav li a
+{
+    color:#4D4D4F;
+    font-size:18px;
+}
+
+.nav li a:hover
+{
+    text-decoration:none;
+    color: orange;
+    background-color:inherit;
+
+}
+
+
+#innovative a
+{
+    color: #4D4D4F;
+    text-decoration:none;
+}
+
+#innovative a:link {text-decoration:none;}
+
+#innovative a:hover 
+{
+    color: orange; /*#0088CC;*/    
+}
+   
+#innovative h1 
+{    
+    background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 13%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,1)), color-stop(13%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 13%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 13%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 13%,rgba(255,255,255,0) 100%); /* IE10+ */
+    background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 13%,rgba(255,255,255,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+   
+    box-shadow: 5px 5px 5px #888;
+    color: #4D4D4F;
+    font-family: AftaserifRegular,sans-serif;
+    font-weight: 900;
+    font-size: 28px;
+    left: 0;
+    margin:0;
+    padding: 15px 0;
+    position: fixed;
+    top: 135px;
+    width: 100%;
+}
+
+#innovative h1 div 
+{    
+    display: block;
+    margin-left:7.5%;
+    width: 830px;
+    line-height:normal;
+}
+
+#innovative h1 div consulting
+{
+    color:Orange;
+    font-style:italic;
+}
+
+#innovative h1 div span
+{
+    display:block;    
+    font-size:14px;
+    color: #4D4D4F;
+}
+
