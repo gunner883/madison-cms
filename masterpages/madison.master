@@ -6,6 +6,10 @@
 <html>
 	<head>
 		<meta charset="utf-8" />	
+		<meta name="google-site-verification" content="k6qCQTnB6WBf8oOQqSlbsmcQYCadO4FvoBB2qxvMpCo" />
+		<meta name="description" content='<umbraco:Item field="metaDescription" recursive="true" runat="server" />'>
+    	<meta name="keywords" content='<umbraco:Item field="metaKeywords" recursive="true" runat="server" />'>
+		
         <link href="../css/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="../css/madison/stickyfooter.css" rel="stylesheet" type="text/css" />
         <link href="../css/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
@@ -56,6 +60,20 @@
     <div id="footer" class="row">
         <div>&copy; 2012 Madison Aria Consulting LLC.</div>
     </div>
+		
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-36922033-1']);
+		  _gaq.push(['_trackPageview']);
+		
+		  (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		
+		</script>
 	</body>
 </html>	
 
