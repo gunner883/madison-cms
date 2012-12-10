@@ -1,13 +1,14 @@
 ﻿#content
 {
  width: 100%;
- margin-left:auto;
+ margin-left:100%;
  margin-right:auto;
  overflow:hidden;
- position: fixed;
- top: 28%;
+ position: relative;
+ margin-top:12%;
+ /*top: 31%;
  left:100%;
- float:left;
+ float:left;*/
  padding: 15px;
  text-align:center;
  box-shadow: 5px 5px 5px #888;
