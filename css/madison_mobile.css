@@ -1,0 +1,85 @@
+@import url("../css/madison/font-face.css") screen, print;
+
+body {
+    margin: 0;
+    font-family: verdana,sans-serif;
+    background-color: #ebebeb;
+    color: #000000;
+    overflow: hidden;
+    -webkit-text-size-adjust: none;
+    background-image:url("/images/madison/vortex-mobile.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:100%;
+}
+
+#header
+{
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+    
+    color:white;
+    padding-top:2.5px;
+    text-align:center;
+    height:100%;
+    font-size:14px;
+    margin-bottom:15px;
+    font-family: AftaserifRegular,sans-serif;
+}
+
+#header div span
+{
+    color:Orange;
+}
+
+#header div
+{
+    line-height:10px;
+
+}
+#contentwrapper
+{
+    min-height:100%;
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+    border-radius:5px;
+}
+
+#content
+{
+ margin-left:auto;
+ margin-right:auto;
+ margin-top:10%;
+ padding: 15px;
+ text-align:center;
+ box-shadow: 5px 5px 5px #888;
+ border-radius: 10px;
+ background: none repeat scroll 0 0 rgba(255, 255, 255, 0.85);
+}
+
+
+#content div
+{    
+	text-align:left;
+	font-family: AftaserifRegular,sans-serif;
+	display:block;
+}
+
+#content div p
+{
+    font-size:14px;
+}
+
+
+#content div span { float: left; font-size: 75px; line-height: 60px; padding-top: 4px; padding-right: 8px; padding-left: 3px; color:orange; }
+      

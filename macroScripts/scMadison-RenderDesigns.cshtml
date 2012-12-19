@@ -1,0 +1,27 @@
+﻿@inherits umbraco.MacroEngines.DynamicNodeContext
+
+<div class="design">
+    <div  id="gallery">
+        <ul>
+        @foreach (var item in @Model.Children) 
+        {
+
+	        if(item.NodeTypeAlias=="imageItem")
+	        {
+
+                <li>
+                    <div>
+                        <a href="@Model.MediaById(@item.image).umbracoFile" title="@item.imageCaption">
+                            <img src="@Model.MediaById(@item.image).umbracoFile" width=300 height=325 alt="" />
+                        </a>
+                    </div>   
+                    <div>
+                        <span class="caption">@item.imageCaption</span>
+                    </div>    
+                </li>
+
+            }
+        }
+        </ul>
+    </div>
+</div>

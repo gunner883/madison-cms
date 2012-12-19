@@ -1,0 +1,13 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/masterpages/madison.master" AutoEventWireup="true" %>
+
+<asp:content ContentPlaceHolderId="main" runat="server">
+<div id="content">
+    <div class="design">
+        
+        <a class="fancybox" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet" href="<umbraco:Macro Alias="ScMadison-GetImagePath" runat="server"></umbraco:Macro>" />" ><umbraco:Macro ID="Macro1" Alias="ScGetMediaImage" runat="server" /></a>
+        <div>
+            <umbraco:Item field="bodyText" runat="server" />
+		</div>
+    </div>
+</div>	
+</asp:content>	

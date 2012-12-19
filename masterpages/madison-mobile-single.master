@@ -1,0 +1,8 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/masterpages/madison-mobile.master" AutoEventWireup="true" %>
+
+<asp:content ContentPlaceHolderId="main" runat="server">
+	<div id="content_bottom">
+		<div><umbraco:Item field="title" runat="server" /></div>	
+		<div><umbraco:Item field="bodyText" runat="server" /></div>	
+	</div>	
+</asp:content>
